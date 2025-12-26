@@ -6,7 +6,7 @@ $env.config.keybindings ++= [{
     mode: emacs
     event: {
         send: executehostcommand,
-        value: "tmux-sessionizer"
+        cmd: "tmux-sessionizer"
     }
 }]
 
