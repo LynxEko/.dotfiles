@@ -1,0 +1,29 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+  then
+    echo "No argument supplied"
+    exit 1
+fi
+
+
+for arg in $@
+do
+    if [ ! -d $arg ]; then
+        echo "No folder with name $arg"
+        exit 1
+    fi
+done
+
+
+for folder in $@
+do
+    if [ -f "$folder/install" ]; then
+        echo "$folder/install"
+        bash $folder/install
+    fi
+    echo "stow $folder"
+    # stow -D $folder
+    stow --simulate -v $folder
+done
+

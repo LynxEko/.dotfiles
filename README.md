@@ -7,4 +7,7 @@ dotfiles for dev environment config
 
 - nvim
 - fzf
-- 
+- ghostty
+
+#### Requirements - Mac
+- aerospace
