@@ -4,10 +4,14 @@
 dotfiles for dev environment config
 
 ### Requirements
-
-- nvim
 - fzf
 - ghostty
+- nvim
+- tmux
+
+#### Requirements - Linux
+- nushell
 
 #### Requirements - Mac
 - aerospace
+- zsh
