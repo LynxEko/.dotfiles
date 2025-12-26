@@ -23,7 +23,7 @@ do
         bash $folder/install
     fi
     echo "stow $folder"
-    stow -D $folder
-    stow $folder
+    # stow -D $folder
+    stow --simulate -v $folder
 done
 
