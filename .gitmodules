@@ -1,3 +1,6 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = https://github.com/lynxeko/nvim
+[submodule "scripts/dependencies/tmux-sessionizer"]
+	path = scripts/dependencies/tmux-sessionizer
+	url = https://github.com/ThePrimeagen/tmux-sessionizer

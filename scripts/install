@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# this is in relation to .dotfiles root
+SCRIPTS_FOLDER="scripts/.local/scripts"
+DEPENDENCIES_FOLDER="scripts/dependencies"
+
+cp "$DEPENDENCIES_FOLDER/tmux-sessionizer/tmux-sessionizer" "$SCRIPTS_FOLDER/tmux-sessionizer"
+
