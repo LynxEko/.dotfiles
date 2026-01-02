@@ -4,5 +4,7 @@
 SCRIPTS_FOLDER="scripts/.local/scripts"
 DEPENDENCIES_FOLDER="scripts/dependencies"
 
+mkdir -p "$SCRIPTS_FOLDER"
 cp "$DEPENDENCIES_FOLDER/tmux-sessionizer/tmux-sessionizer" "$SCRIPTS_FOLDER/tmux-sessionizer"
+
 
