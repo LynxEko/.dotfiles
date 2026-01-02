@@ -3,3 +3,12 @@
 git submodule init
 git submodule update
 
+
+pushd nvim/.config/nvim
+git checkout master
+popd
+
+pushd scripts/dependencies/tmux-sessionizer
+git checkout master
+popd
+
