@@ -1,3 +1,22 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/.config/nushell/autoload
+
+case `hostname` in
+    "archwatermelon")
+        NUSHELL_CONFIG_DIR=".config/nushell"
+        ;;
+    "MacBook-Pro-de-Erik.local")
+        NUSHELL_CONFIG_DIR="Library/Application Support/nushell"
+        ;;
+    *)
+        ;;
+esac
+
+# install config files for current pc
+mkdir -p "nushell/$NUSHELL_CONFIG_DIR"
+cp -R "nushell/config/." "nushell/$NUSHELL_CONFIG_DIR/"
+
+# create autoload dir to support custom scripts 
+mkdir -p "$HOME/$NUSHELL_CONFIG_DIR/autoload"
+
+
