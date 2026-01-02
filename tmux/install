@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 TMUX_CONFIG_PATH="tmux/.config/tmux/tmux.conf"
+mkdir -p $(dirname $TMUX_CONFIG_PATH)
+
 BASE_FILE="
 set -g default-terminal "tmux-256color"
 set -g mouse on
