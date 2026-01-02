@@ -6,6 +6,7 @@ dotfiles for dev environment config
 ### Requirements
 - fzf
 - ghostty
+- nushell
 - nvim
 - starship
 - stow
@@ -13,8 +14,7 @@ dotfiles for dev environment config
 - zoxide
 
 #### Requirements - Linux
-- nushell
+- ...
 
 #### Requirements - Mac
 - aerospace
-- fish (I may replace this with nushell maybe)
