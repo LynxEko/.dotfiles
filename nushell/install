@@ -13,6 +13,7 @@ case `hostname` in
 esac
 
 # install config files for current pc
+rm -rf "nushell/$NUSHELL_CONFIG_DIR"
 mkdir -p "nushell/$NUSHELL_CONFIG_DIR"
 cp -R "nushell/config/." "nushell/$NUSHELL_CONFIG_DIR/"
 
