@@ -6,15 +6,16 @@ mkdir -p $(dirname $TMUX_CONFIG_PATH)
 BASE_FILE="
 set -g default-terminal "tmux-256color"
 set -g mouse on
+set -as terminal-features ",*:hyperlinks"
 "
 echo "$BASE_FILE" > $TMUX_CONFIG_PATH
 
 case `hostname` in
     "archwatermelon")
-        echo "set-option -g default-shell \"/usr/bin/nu\"" > $TMUX_CONFIG_PATH
+        echo "set-option -g default-shell \"/usr/bin/nu\"" >> $TMUX_CONFIG_PATH
         ;;
     "MacBook-Pro-de-Erik.local")
-        echo "set-option -g default-shell \"/opt/homebrew/bin/nu\"" > $TMUX_CONFIG_PATH
+        echo "set-option -g default-shell \"/opt/homebrew/bin/nu\"" >> $TMUX_CONFIG_PATH
         ;;
     *)
         ;;
