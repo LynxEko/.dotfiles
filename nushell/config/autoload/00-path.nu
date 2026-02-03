@@ -10,5 +10,6 @@ if (hostname) == "archwatermelon" {
     path add /opt/homebrew/bin
     path add /opt/homebrew/opt/awscli@1/bin
     path add ~/.local/scripts
+    path add ~/.opencode/bin
 }
 
