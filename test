@@ -24,6 +24,6 @@ do
     fi
     echo "stow $folder"
     # stow -D $folder
-    stow --simulate -v $folder
+    stow --simulate -v $folder --target=$HOME
 done
 
