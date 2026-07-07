@@ -8,3 +8,5 @@ nushell/.config
 
 nushell/Library
 
+/shell/.bashrc
+/shell/.zshrc
