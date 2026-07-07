@@ -14,5 +14,6 @@ if [ -x "$(command -v zoxide)" ]; then
             echo "shell not recognized, can't setup zoxide"
             ;;
     esac
+    export _ZO_DOCTOR=0
 fi
 
