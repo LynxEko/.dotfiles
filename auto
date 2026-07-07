@@ -4,10 +4,10 @@
 
 case `hostname` in
     "archwatermelon")
-        ./install ghostty nushell nvim scripts tmux
+        ./install ghostty nushell shell nvim scripts tmux
         ;;
     "MacBook-Pro-de-Erik.local")
-        ./install aerospace ghostty nushell nvim scripts tmux
+        ./install aerospace ghostty nushell shell nvim scripts tmux
         ;;
     *)
         ;;
