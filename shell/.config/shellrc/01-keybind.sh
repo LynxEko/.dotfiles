@@ -19,6 +19,6 @@ case "$(ps -p $$ -o 'comm=')" in
         ;;
 esac
 
-bind-exec "^f" "tmux-sessionizer"
+bind-exec "\C-f" "tmux-sessionizer"
 
 
