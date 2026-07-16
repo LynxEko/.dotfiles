@@ -24,22 +24,10 @@ OMZEOF
 }
 
 
-telemetry_section(){
-cat <<TELEOF
-export FEVER_DEVEX_TELEMETRY_HOST="http://localhost:8000"
-[ -f "\$HOME/.local/fever/devex_telemetry.sh" ] && source "\$HOME/.local/fever/devex_telemetry.sh"
-
-TELEOF
-}
-
-
-
 if [ -x "$(command -v bash)" ]; then
     loader > "shell/.bashrc"
-    telemetry_section >> "shell/.bashrc"
 fi
 if [ -x "$(command -v zsh)" ]; then
     loader > "shell/.zshrc"
     omz_section >> "shell/.zshrc"
-    telemetry_section >> "shell/.zshrc"
 fi
