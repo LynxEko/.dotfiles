@@ -15,6 +15,7 @@ case $(uname -n) in
     archwatermelon)
         pre_path "$HOME/.local/bin"
         pre_path "$HOME/.local/scripts"
+        pre_path "${ASDF_DATA_DIR:-$HOME/.asdf}/shims"
 
         post_path "$HOME/.cargo/bin"
         ;;
